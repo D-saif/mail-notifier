@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tLG14KAhuRW3tq/VgL11HKT+UIhHxEZWSrLTlEeJXYg=",
+  "Source": "MailNotifierApi",
+  "BasePath": "_content/MailNotifierApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
