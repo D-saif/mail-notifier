@@ -41,13 +41,14 @@ public class MailNotifierController : ControllerBase
         return "mail sent successfully";
     }
     
-    // [HttpGet("/confirm_ticket_closure/{destination_adress}/{ticket_number}")]
-    // public String confirmTicketClosure(string destination_adress,int ticket_number){
-    //     string body = "Cher client\n"+"votre réclamation ( ticket inscrit sous le numero: "+ticket_number+") a ete bien traitée ";
-    //     string subject = "Confirmation de cloture du ticket" ; 
-    //     SendMailNotification(body, destination_adress, subject,ticket_number);
-    //     return "";
-    // }
+    
+    [HttpGet("/confirm_ticket_closure/{destination_adress}/{ticket_number}")]
+    public String confirmTicketClosure(string destination_adress,int ticket_number){
+        string body = "Cher client\n"+"votre réclamation ( ticket inscrit sous le numero: "+ticket_number+") a ete bien traitée ";
+        string subject = "Confirmation de cloture du ticket" ; 
+        SendMailNotification(body, destination_adress, subject,ticket_number);
+        return "";
+    }
     
    
 }
